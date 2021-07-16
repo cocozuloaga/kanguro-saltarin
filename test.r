@@ -3,6 +3,9 @@
 df <- read.csv("iris.csv")
 
 
+print("A few calculation comparing species:")
+cat("\n")
+
 print(paste("Setosa  ---  <sepal_length> = ", mean(df[df$species == "setosa",]$sepal_length)))
 print(paste("Versicolor  ---  <sepal_length> = ", mean(df[df$species == "versicolor",]$sepal_length)))
 print(paste("Virginica  ---  <sepal_length> = ", mean(df[df$species == "virginica",]$sepal_length)))
